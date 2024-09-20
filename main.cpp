@@ -1,12 +1,13 @@
 #include <iostream>
-int get_value()
+
+void printA()
 {
-	return 5;
-	return 7;
+	std::cout << "A\n";
 }
 
-int main(){
-	std::cout<<get_value();
-	return 0;
+int main()
+{
+	std::cout << printA() << '\n';
 
+	return 0;
 }
