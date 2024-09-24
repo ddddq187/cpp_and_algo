@@ -1,13 +1,12 @@
 #include <iostream>
 
-void printA()
-{
-	std::cout << "A\n";
-}
 
 int main()
 {
-	std::cout << printA() << '\n';
+#define Foo 9
+#ifdef Foo
+	std::cout<<Foo;
+#endif
 
 	return 0;
 }
