@@ -1,12 +1,8 @@
 #include <iostream>
-#include <print>
-#include <format>
-int main()
-{
-
-	std::cout<<std::format("{:b}\n",0b0010);
-	std::cout<<std::format("{:#b}\n",0b0010);
-	std::println("{:b}  {:#b}",0b0010,0b0010);
-
+#include <algorithm>
+#include "algo_test.h"
+int main() {
+	std::vector<int> nums = { 5,2,3,1,6,4,7,8,9,0};
+	Solution::heap_sort(nums,static_cast<int>(size(nums)+1));
 	return 0;
 }
