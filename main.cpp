@@ -2,7 +2,7 @@
 #include <algorithm>
 #include "algo_test.h"
 int main() {
-	std::vector<int> nums = { 5,2,3,1,6,4,7,8,9,0};
-	Solution::heap_sort(nums,static_cast<int>(size(nums)+1));
+	std::vector<int> nums = { 3,0,4,2,5,1,3,1,4,3};
+	Solution::count_sort(nums);
 	return 0;
 }
